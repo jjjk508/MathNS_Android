@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/title" />
+
+    <EditText
+        android:id="@+id/editID"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="ID" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:text="자동 로그인"
+        android:layout_marginLeft="70px"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="110px"
+        android:background="#FFDC3C"
+        android:text="로그인" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="326dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"
+        android:background="#FFFFFF"
+        android:text="회원가입" />
+
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="326dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30px"
+        android:background="#FFFFFF"
+        android:text="아이디/비밀번호 찾기" />
+
+</LinearLayout>

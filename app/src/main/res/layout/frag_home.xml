@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/title" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"/> //구분선
+    <TextView
+        android:id="@+id/questionShareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="문제 공유"
+        android:layout_gravity="center"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/questionList"
+        android:layout_width="wrap_content"
+        android:layout_height="235dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"/> //구분선
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/popQue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="인기 문제"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/recBook"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recBook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="추천 서적"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popQue"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="205dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/poQue_title"
+                android:layout_width="206dp"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="제목: 이차함수 풀이 부탁드려요!"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="206dp"
+                android:layout_height="20dp"
+                android:gravity="end"
+                android:text="작성자 : 윤철"
+                android:textAlignment="textEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poQue_title" />
+
+            <TextView
+                android:id="@+id/hits"
+                android:layout_width="206dp"
+                android:layout_height="20dp"
+                android:gravity="end"
+                android:text="조회수 : 73"
+                android:textAlignment="textEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/author" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="206dp"
+                android:layout_height="160dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hits"
+                app:srcCompat="@drawable/popular_que" />
+
+            <TextView
+                android:id="@+id/hashtag"
+                android:layout_width="206dp"
+                android:layout_height="22dp"
+                android:gravity="end"
+                android:text="#이차함수 #미적"
+                android:textAlignment="textEnd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="2">
+
+
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:rating="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/assessment"
+                android:layout_width="fill_parent"
+                android:layout_height="19dp"
+                android:text="7개의 평가"
+                android:textAlignment="textEnd"
+                android:gravity="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="208dp"
+                android:layout_height="163dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/assessment"
+                app:srcCompat="@drawable/jungsuck" />
+
+            <TextView
+                android:id="@+id/book_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="수학의 정석-미적분 I"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/hashtag2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="#고등수학 #성지출판"
+                android:textAlignment="textEnd"
+                android:gravity="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </GridLayout>
+
+</LinearLayout>

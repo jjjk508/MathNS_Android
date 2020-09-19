@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000" />
+    //구분선
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:gravity="center_horizontal"
+        android:text="마이 페이지"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/gradeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center|center_horizontal"
+        android:text="등급 정보"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/myGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center|center_horizontal"
+        android:text="나의 등급 : 4등급"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/questionNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center|center_horizontal"
+        android:text="질문 수  : 7"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/answerNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+
+        android:gravity="center|center_horizontal"
+        android:text="답변 수 : 5"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/responseNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+
+        android:gravity="center|center_horizontal"
+        android:text="채택 답변 수 : 3"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/recNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+
+        android:gravity="center|center_horizontal"
+        android:text="받은 추천 수 : 10"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/totalPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center|center_horizontal"
+        android:text="총 포인트 : 20p"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nextLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+
+        android:gravity="center|center_horizontal"
+        android:text="다음 등급까지 : 10p"
+        android:textSize="24sp" />
+
+    //구분선
+
+
+</LinearLayout>

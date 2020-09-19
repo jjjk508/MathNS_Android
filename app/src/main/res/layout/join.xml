@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/joinID"
+            android:layout_width="239dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="ID"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/checkBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/checkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:background="#FFEB3B"
+            android:text="중복확인"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/joinID"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/joinPassword"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/joinName"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/joinEmail"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="20"
+        android:inputType="textPersonName"
+        android:hint="E-mail" />
+
+    <EditText
+        android:id="@+id/joinNickName"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="NickName" />
+
+    <Button
+        android:id="@+id/joinBtn"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FFEB3B"
+        android:text="회원가입" />
+
+</LinearLayout>
