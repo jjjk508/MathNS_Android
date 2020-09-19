@@ -63,8 +63,11 @@ public class frag_login extends Fragment implements View.OnClickListener {
                 if(login(id,password)==1){
 
                     System.out.println("성공");
-                    ((HomeActivity)getActivity()).delFrag(4);
-                    ((HomeActivity)getActivity()).setFrag(0);
+                    // 2020-09-19 로그인 후 화면전환 수정
+                    //((HomeActivity)getActivity()).delFrag(4);
+                    //((HomeActivity)getActivity()).setFrag(0);
+                    ((HomeActivity)getActivity()).setLogin(true);
+                    ((HomeActivity)getActivity()).getBottomNavigationView().setSelectedItemId(R.id.action_bar_home);
                 }
                 else if(login(id,password)==2){
 
